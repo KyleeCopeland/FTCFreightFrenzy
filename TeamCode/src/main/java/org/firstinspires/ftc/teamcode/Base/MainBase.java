@@ -31,7 +31,7 @@ public class MainBase {
     /*public ModernRoboticsI2cRangeSensor frontRange   = null;
     public ModernRoboticsI2cRangeSensor leftRange    = null;
     public ModernRoboticsI2cRangeSensor rightRange   = null;
-    //public ModernRoboticsI2cGyro        gyro         = null;*/
+    public ModernRoboticsI2cGyro        gyro         = null;*/
 
 
     static final double     COUNTS_PER_MOTOR_REV    = 386.3;
