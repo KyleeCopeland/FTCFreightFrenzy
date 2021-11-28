@@ -52,6 +52,7 @@ public class BlueWH extends LinearOpMode{
 
         //---------------- CASE LEFT ----------------
 
+        base.gyroTurn(base.DRIVE_SPEED, 90, this);
         base.gyroDrive(base.DRIVE_SPEED, 32, 32,0,0,0, this);
         base.gyroTurn(base.DRIVE_SPEED, 90, this);
 
@@ -103,6 +104,7 @@ public class BlueWH extends LinearOpMode{
 
         //---------------- CASE MIDDLE ----------------
 
+        base.gyroTurn(base.DRIVE_SPEED, 90, this);
         base.gyroDrive(base.DRIVE_SPEED, 32, 32,0,0,0, this);
         base.gyroTurn(base.DRIVE_SPEED, 90, this);
 
@@ -154,6 +156,7 @@ public class BlueWH extends LinearOpMode{
 
         //---------------- CASE RIGHT ----------------
 
+        base.gyroTurn(base.DRIVE_SPEED, 90, this);
         base.gyroDrive(base.DRIVE_SPEED, 32, 32,0,0,0, this);
         base.gyroTurn(base.DRIVE_SPEED, 90, this);
 
