@@ -106,6 +106,8 @@ public class BlueCarousel extends LinearOpMode{
         sleep(2000);
         base.bucket.setPower(0);
 
+        base.lift(1, this);
+
         base.gyroDrive(-1, 6, 6, 0, 0, 0, this);
         base.gyroTurn(base.DRIVE_SPEED, -45, this);
         base.gyroDrive(0.5, 80, 80, 0, 0, 0, this);
@@ -136,6 +138,8 @@ public class BlueCarousel extends LinearOpMode{
         base.bucket.setPower(-0.5);
         sleep(2000);
         base.bucket.setPower(0);
+
+        base.lift(1, this);
 
         base.gyroDrive(-1, 6, 6, 0, 0, 0, this);
         base.gyroTurn(base.DRIVE_SPEED, -45, this);

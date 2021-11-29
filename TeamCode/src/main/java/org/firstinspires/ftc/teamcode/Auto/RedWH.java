@@ -7,14 +7,15 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import org.firstinspires.ftc.teamcode.Base.MainBase;
 
 @Autonomous(name="Main BLUE")
-public class BlueWH extends LinearOpMode{
+public class RedWH extends LinearOpMode{
 
     MainBase base = new MainBase();
 
     @Override
     public void runOpMode() throws InterruptedException {
 
-        ContourDetector detector = new ContourDetector(hardwareMap, telemetry);
+        ObjectDetector detector = new ObjectDetector(this, false);
+
 
         base.init(hardwareMap);
 
@@ -29,13 +30,13 @@ public class BlueWH extends LinearOpMode{
 
         base.gyro.resetZAxisIntegrator();
 
-        /*int position = detector.getDecision();
+        int position = detector.getDecision();
         detector.setTelemShow(false);
-
+        /*
         //---------------- CASE LEFT ----------------
         if (position == 0){
             //Robot movements for "Case Left" position of team marker.
-        robot.gyroDrive(MainBase.
+
         }
 
         //---------------- CASE MIDDLE ----------------
@@ -47,14 +48,12 @@ public class BlueWH extends LinearOpMode{
         //---------------- CASE RIGHT ----------------
         else{
             //Robot movements for "Case Right" position of team marker.
-        }*/
+        */
+        //---------------- CASE LEFT -----------------
 
-
-        //---------------- CASE LEFT ----------------
-
-        base.gyroTurn(base.DRIVE_SPEED, 90, this);
+        base.gyroTurn(base.DRIVE_SPEED, -90, this);
         base.gyroDrive(base.DRIVE_SPEED, 32, 32,0,0,0, this);
-        base.gyroTurn(base.DRIVE_SPEED, 90, this);
+        base.gyroTurn(base.DRIVE_SPEED, -90, this);
 
         base.lift(1,this);
 
@@ -73,7 +72,6 @@ public class BlueWH extends LinearOpMode{
         base.gyroTurn(base.DRIVE_SPEED, 180, this);
         base.gyroDrive(0.5, 24, 24, 0,0,0,this);
 
-
         base.bucket.setPower(0.5);
         sleep(2000);
         base.bucket.setPower(0);
@@ -83,8 +81,8 @@ public class BlueWH extends LinearOpMode{
         base.rightClaw.setPower(0);
 
         base.bucket.setPower(-0.5);
-        sleep(500);
-        base.rightClaw.setPower(0);
+        sleep(2000);
+        base.bucket.setPower(0);
 
         base.gyroDrive(-0.5, 24, 24, 0,0,0,this);
         base.gyroTurn(base.DRIVE_SPEED, 180, this);
@@ -134,15 +132,11 @@ public class BlueWH extends LinearOpMode{
         base.gyroTurn(base.DRIVE_SPEED, 180, this);
         base.gyroDrive(0.5, 24, 24, 0,0,0,this);
 
-        base.bucket.setPower(0.5);
-        sleep(2000);
-        base.bucket.setPower(0);
-
-        base.rightClaw.setPower(-0.5);
+        base.rightClaw.setPower(0.5);
         sleep(500);
         base.rightClaw.setPower(0);
 
-        base.bucket.setPower(-0.5);
+        base.rightClaw.setPower(-0.5);
         sleep(500);
         base.rightClaw.setPower(0);
 
@@ -194,15 +188,11 @@ public class BlueWH extends LinearOpMode{
         base.gyroTurn(base.DRIVE_SPEED, 180, this);
         base.gyroDrive(0.5, 24, 24, 0,0,0,this);
 
-        base.bucket.setPower(0.5);
-        sleep(2000);
-        base.bucket.setPower(0);
-
-        base.rightClaw.setPower(-0.5);
+        base.rightClaw.setPower(0.5);
         sleep(500);
         base.rightClaw.setPower(0);
 
-        base.bucket.setPower(-0.5);
+        base.rightClaw.setPower(-0.5);
         sleep(500);
         base.rightClaw.setPower(0);
 
@@ -227,6 +217,6 @@ public class BlueWH extends LinearOpMode{
 
         base.gyroTurn(base.DRIVE_SPEED, 180, this);
         base.gyroDrive(0.5, 24, 24, 0,0,0,this);
-
     }
-}
+    }
+
