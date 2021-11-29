@@ -109,9 +109,9 @@ public class RedWH extends LinearOpMode{
 
         //---------------- CASE MIDDLE ----------------
 
-        base.gyroTurn(base.DRIVE_SPEED, 90, this);
+        base.gyroTurn(base.DRIVE_SPEED, -90, this);
         base.gyroDrive(base.DRIVE_SPEED, 32, 32,0,0,0, this);
-        base.gyroTurn(base.DRIVE_SPEED, 90, this);
+        base.gyroTurn(base.DRIVE_SPEED, -90, this);
 
         base.lift(2,this);
 
@@ -165,9 +165,9 @@ public class RedWH extends LinearOpMode{
 
         //---------------- CASE RIGHT ----------------
 
-        base.gyroTurn(base.DRIVE_SPEED, 90, this);
+        base.gyroTurn(base.DRIVE_SPEED, -90, this);
         base.gyroDrive(base.DRIVE_SPEED, 32, 32,0,0,0, this);
-        base.gyroTurn(base.DRIVE_SPEED, 90, this);
+        base.gyroTurn(base.DRIVE_SPEED, -90, this);
 
         base.lift(3,this);
 
