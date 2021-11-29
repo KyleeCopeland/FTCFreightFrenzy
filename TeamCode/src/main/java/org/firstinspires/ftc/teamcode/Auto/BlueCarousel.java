@@ -29,13 +29,12 @@ public class BlueCarousel extends LinearOpMode{
 
         base.gyro.resetZAxisIntegrator();
 
-        /*int position = detector.getDecision();
+        /* int position = detector.getDecision();
         detector.setTelemShow(false);
 
         //---------------- CASE LEFT ----------------
         if (position == 0){
             //Robot movements for "Case Left" position of team marker.
-        robot.gyroDrive(MainBase.
         }
 
         //---------------- CASE MIDDLE ----------------
@@ -78,7 +77,7 @@ public class BlueCarousel extends LinearOpMode{
 
         base.gyroDrive(-1, 6, 6, 0, 0, 0, this);
         base.gyroTurn(base.DRIVE_SPEED, -45, this);
-        base.gyroDrive(base.DRIVE_SPEED, 80, 80, 0, 0, 0, this);
+        base.gyroDrive(0.5, 80, 80, 0, 0, 0, this);
 
 
         //---------------- CASE MIDDLE ----------------
@@ -109,7 +108,7 @@ public class BlueCarousel extends LinearOpMode{
 
         base.gyroDrive(-1, 6, 6, 0, 0, 0, this);
         base.gyroTurn(base.DRIVE_SPEED, -45, this);
-        base.gyroDrive(base.DRIVE_SPEED, 80, 80, 0, 0, 0, this);
+        base.gyroDrive(0.5, 80, 80, 0, 0, 0, this);
 
 
         //---------------- CASE RIGHT ----------------
@@ -140,7 +139,7 @@ public class BlueCarousel extends LinearOpMode{
 
         base.gyroDrive(-1, 6, 6, 0, 0, 0, this);
         base.gyroTurn(base.DRIVE_SPEED, -45, this);
-        base.gyroDrive(base.DRIVE_SPEED, 80, 80, 0, 0, 0, this);
+        base.gyroDrive(0.5, 80, 80, 0, 0, 0, this);
 
     }
 }
