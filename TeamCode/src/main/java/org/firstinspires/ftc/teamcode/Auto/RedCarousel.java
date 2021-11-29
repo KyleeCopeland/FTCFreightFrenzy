@@ -6,8 +6,8 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 
 import org.firstinspires.ftc.teamcode.Base.MainBase;
 
-@Autonomous(name="BlueCarousel")
-public class BlueCarousel extends LinearOpMode{
+@Autonomous(name="RedCarousel")
+public class RedCarousel extends LinearOpMode{
 
     MainBase base = new MainBase();
 
