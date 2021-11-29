@@ -52,13 +52,13 @@ public class RedCarousel extends LinearOpMode{
         //---------------- CASE LEFT ----------------
 
         base.gyroDrive(-1, 13,13,0,0,0,this);
-        base.gyroTurn(base.DRIVE_SPEED, 115, this);
+        base.gyroTurn(base.DRIVE_SPEED, -115, this);
 
-        base.rightDuck.setPower(0.5);
+        base.leftDuck.setPower(-0.5);
         sleep(3000);
-        base.rightDuck.setPower(0);
+        base.leftDuck.setPower(0);
 
-        base.gyroTurn(base.DRIVE_SPEED, -90, this);
+        base.gyroTurn(base.DRIVE_SPEED, 90, this);
         base.gyroDrive(base.DRIVE_SPEED, 24, 24, 0, 0, 0, this);
 
         base.lift(1,this);
@@ -76,20 +76,20 @@ public class RedCarousel extends LinearOpMode{
         base.bucket.setPower(0);
 
         base.gyroDrive(-1, 6, 6, 0, 0, 0, this);
-        base.gyroTurn(base.DRIVE_SPEED, -45, this);
+        base.gyroTurn(base.DRIVE_SPEED, 45, this);
         base.gyroDrive(0.5, 80, 80, 0, 0, 0, this);
 
 
         //---------------- CASE MIDDLE ----------------
 
         base.gyroDrive(-1, 13,13,0,0,0,this);
-        base.gyroTurn(base.DRIVE_SPEED, 115, this);
+        base.gyroTurn(base.DRIVE_SPEED, -115, this);
 
-        base.rightDuck.setPower(0.5);
+        base.leftDuck.setPower(-0.5);
         sleep(3000);
-        base.rightDuck.setPower(0);
+        base.leftDuck.setPower(0);
 
-        base.gyroTurn(base.DRIVE_SPEED, -90, this);
+        base.gyroTurn(base.DRIVE_SPEED, 90, this);
         base.gyroDrive(base.DRIVE_SPEED, 24, 24, 0, 0, 0, this);
 
         base.lift(2,this);
@@ -109,20 +109,20 @@ public class RedCarousel extends LinearOpMode{
         base.lift(1, this);
 
         base.gyroDrive(-1, 6, 6, 0, 0, 0, this);
-        base.gyroTurn(base.DRIVE_SPEED, -45, this);
+        base.gyroTurn(base.DRIVE_SPEED, 45, this);
         base.gyroDrive(0.5, 80, 80, 0, 0, 0, this);
 
 
         //---------------- CASE RIGHT ----------------
 
         base.gyroDrive(-1, 13,13,0,0,0,this);
-        base.gyroTurn(base.DRIVE_SPEED, 115, this);
+        base.gyroTurn(base.DRIVE_SPEED, -115, this);
 
-        base.rightDuck.setPower(0.5);
+        base.leftDuck.setPower(-0.5);
         sleep(3000);
-        base.rightDuck.setPower(0);
+        base.leftDuck.setPower(0);
 
-        base.gyroTurn(base.DRIVE_SPEED, -90, this);
+        base.gyroTurn(base.DRIVE_SPEED, 90, this);
         base.gyroDrive(base.DRIVE_SPEED, 24, 24, 0, 0, 0, this);
 
         base.lift(3,this);
@@ -142,7 +142,7 @@ public class RedCarousel extends LinearOpMode{
         base.lift(1, this);
 
         base.gyroDrive(-1, 6, 6, 0, 0, 0, this);
-        base.gyroTurn(base.DRIVE_SPEED, -45, this);
+        base.gyroTurn(base.DRIVE_SPEED, 45, this);
         base.gyroDrive(0.5, 80, 80, 0, 0, 0, this);
 
     }
