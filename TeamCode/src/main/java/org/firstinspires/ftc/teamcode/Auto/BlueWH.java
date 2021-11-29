@@ -73,11 +73,15 @@ public class BlueWH extends LinearOpMode{
         base.gyroTurn(base.DRIVE_SPEED, 180, this);
         base.gyroDrive(0.5, 24, 24, 0,0,0,this);
 
-        base.rightClaw.setPower(0.5);
+        base.bucket.setPower(0.5);
+        sleep(2000);
+        base.bucket.setPower(0);
+
+        base.rightClaw.setPower(-0.5);
         sleep(500);
         base.rightClaw.setPower(0);
 
-        base.rightClaw.setPower(-0.5);
+        base.bucket.setPower(-0.5);
         sleep(500);
         base.rightClaw.setPower(0);
 
@@ -125,11 +129,15 @@ public class BlueWH extends LinearOpMode{
         base.gyroTurn(base.DRIVE_SPEED, 180, this);
         base.gyroDrive(0.5, 24, 24, 0,0,0,this);
 
-        base.rightClaw.setPower(0.5);
+        base.bucket.setPower(0.5);
+        sleep(2000);
+        base.bucket.setPower(0);
+
+        base.rightClaw.setPower(-0.5);
         sleep(500);
         base.rightClaw.setPower(0);
 
-        base.rightClaw.setPower(-0.5);
+        base.bucket.setPower(-0.5);
         sleep(500);
         base.rightClaw.setPower(0);
 
@@ -160,7 +168,7 @@ public class BlueWH extends LinearOpMode{
         base.gyroDrive(base.DRIVE_SPEED, 32, 32,0,0,0, this);
         base.gyroTurn(base.DRIVE_SPEED, 90, this);
 
-        base.lift(3,this);
+        base.lift(1,this);
 
         base.bucket.setPower(0.5);
         sleep(2000);
@@ -177,11 +185,15 @@ public class BlueWH extends LinearOpMode{
         base.gyroTurn(base.DRIVE_SPEED, 180, this);
         base.gyroDrive(0.5, 24, 24, 0,0,0,this);
 
-        base.rightClaw.setPower(0.5);
+        base.bucket.setPower(0.5);
+        sleep(2000);
+        base.bucket.setPower(0);
+
+        base.rightClaw.setPower(-0.5);
         sleep(500);
         base.rightClaw.setPower(0);
 
-        base.rightClaw.setPower(-0.5);
+        base.bucket.setPower(-0.5);
         sleep(500);
         base.rightClaw.setPower(0);
 
