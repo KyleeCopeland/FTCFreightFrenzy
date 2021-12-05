@@ -53,7 +53,7 @@ public class RedWH extends LinearOpMode{
 
         base.gyroTurn(base.DRIVE_SPEED, -90, this);
         base.gyroDrive(base.DRIVE_SPEED, 32, 32,0,0,0, this);
-        base.gyroTurn(base.DRIVE_SPEED, -90, this);
+        base.gyroTurn(base.DRIVE_SPEED, -90, this); //turns and drives toward alliance hub
 
         base.lift(1,this);
 
@@ -67,10 +67,10 @@ public class RedWH extends LinearOpMode{
 
         base.bucket.setPower(-0.5);
         sleep(2000);
-        base.bucket.setPower(0);
+        base.bucket.setPower(0); //delivers pre-loaded game piece
 
         base.gyroTurn(base.DRIVE_SPEED, 180, this);
-        base.gyroDrive(0.5, 24, 24, 0,0,0,this);
+        base.gyroDrive(0.5, 24, 24, 0,0,0,this); //turns and drives toward warehouse
 
         base.bucket.setPower(0.5);
         sleep(2000);
@@ -82,12 +82,12 @@ public class RedWH extends LinearOpMode{
 
         base.bucket.setPower(-0.5);
         sleep(2000);
-        base.bucket.setPower(0);
+        base.bucket.setPower(0); //collects freight
 
         base.gyroDrive(-0.5, 24, 24, 0,0,0,this);
-        base.gyroTurn(base.DRIVE_SPEED, 180, this);
+        base.gyroTurn(base.DRIVE_SPEED, 180, this); //turns and drives toward hub
 
-        base.lift(3,this);
+        base.lift(3,this); //lifts bucket
 
         base.bucket.setPower(0.5);
         sleep(2000);
@@ -99,19 +99,19 @@ public class RedWH extends LinearOpMode{
 
         base.bucket.setPower(-0.5);
         sleep(2000);
-        base.bucket.setPower(0);
+        base.bucket.setPower(0); //delivers freight
 
         base.lift(1, this);
 
         base.gyroTurn(base.DRIVE_SPEED, 180, this);
-        base.gyroDrive(0.5, 24, 24, 0,0,0,this);
+        base.gyroDrive(0.5, 24, 24, 0,0,0,this); //turns and parks in warehouse
 
 
         //---------------- CASE MIDDLE ----------------
 
         base.gyroTurn(base.DRIVE_SPEED, -90, this);
         base.gyroDrive(base.DRIVE_SPEED, 32, 32,0,0,0, this);
-        base.gyroTurn(base.DRIVE_SPEED, -90, this);
+        base.gyroTurn(base.DRIVE_SPEED, -90, this); //turns and drives toward hub
 
         base.lift(2,this);
 
@@ -125,12 +125,16 @@ public class RedWH extends LinearOpMode{
 
         base.bucket.setPower(-0.5);
         sleep(2000);
-        base.bucket.setPower(0);
+        base.bucket.setPower(0); //delivers pre-loaded game piece
 
         base.lift(1, this);
 
         base.gyroTurn(base.DRIVE_SPEED, 180, this);
-        base.gyroDrive(0.5, 24, 24, 0,0,0,this);
+        base.gyroDrive(0.5, 24, 24, 0,0,0,this); //turns and drives toward warehouse
+
+        base.bucket.setPower(0.5);
+        sleep(2000);
+        base.bucket.setPower(0);
 
         base.rightClaw.setPower(0.5);
         sleep(500);
@@ -138,12 +142,12 @@ public class RedWH extends LinearOpMode{
 
         base.rightClaw.setPower(-0.5);
         sleep(500);
-        base.rightClaw.setPower(0);
+        base.rightClaw.setPower(0); //collects freight
 
         base.gyroDrive(-0.5, 24, 24, 0,0,0,this);
-        base.gyroTurn(base.DRIVE_SPEED, 180, this);
+        base.gyroTurn(base.DRIVE_SPEED, 180, this); //drives and turns toward hub
 
-        base.lift(3,this);
+        base.lift(3,this); //lifts bucket
 
         base.bucket.setPower(0.5);
         sleep(2000);
@@ -155,19 +159,19 @@ public class RedWH extends LinearOpMode{
 
         base.bucket.setPower(-0.5);
         sleep(2000);
-        base.bucket.setPower(0);
+        base.bucket.setPower(0); //delivers freight
 
         base.lift(1, this);
 
         base.gyroTurn(base.DRIVE_SPEED, 180, this);
-        base.gyroDrive(0.5, 24, 24, 0,0,0,this);
+        base.gyroDrive(0.5, 24, 24, 0,0,0,this); //turns and parks in warehouse
 
 
         //---------------- CASE RIGHT ----------------
 
         base.gyroTurn(base.DRIVE_SPEED, -90, this);
         base.gyroDrive(base.DRIVE_SPEED, 32, 32,0,0,0, this);
-        base.gyroTurn(base.DRIVE_SPEED, -90, this);
+        base.gyroTurn(base.DRIVE_SPEED, -90, this); //turns and drives toward alliance hub
 
         base.lift(3,this);
 
@@ -181,12 +185,16 @@ public class RedWH extends LinearOpMode{
 
         base.bucket.setPower(-0.5);
         sleep(2000);
-        base.bucket.setPower(0);
+        base.bucket.setPower(0); //delivers pre-loaded game piece
 
         base.lift(1, this);
 
         base.gyroTurn(base.DRIVE_SPEED, 180, this);
-        base.gyroDrive(0.5, 24, 24, 0,0,0,this);
+        base.gyroDrive(0.5, 24, 24, 0,0,0,this); //turns and drives toward warehouse
+
+        base.bucket.setPower(0.5);
+        sleep(2000);
+        base.bucket.setPower(0);
 
         base.rightClaw.setPower(0.5);
         sleep(500);
@@ -194,12 +202,12 @@ public class RedWH extends LinearOpMode{
 
         base.rightClaw.setPower(-0.5);
         sleep(500);
-        base.rightClaw.setPower(0);
+        base.rightClaw.setPower(0); //collects freight
 
         base.gyroDrive(-0.5, 24, 24, 0,0,0,this);
-        base.gyroTurn(base.DRIVE_SPEED, 180, this);
+        base.gyroTurn(base.DRIVE_SPEED, 180, this); //turns and drives toward hub
 
-        base.lift(3,this);
+        base.lift(3,this); //lifts bucket
 
         base.bucket.setPower(0.5);
         sleep(2000);
@@ -211,12 +219,12 @@ public class RedWH extends LinearOpMode{
 
         base.bucket.setPower(-0.5);
         sleep(2000);
-        base.bucket.setPower(0);
+        base.bucket.setPower(0); //delivers freight
 
         base.lift(1, this);
 
         base.gyroTurn(base.DRIVE_SPEED, 180, this);
-        base.gyroDrive(0.5, 24, 24, 0,0,0,this);
+        base.gyroDrive(0.5, 24, 24, 0,0,0,this); //turns and parks in warehouse
     }
     }
 

@@ -120,7 +120,7 @@ public class BlueCarousel extends LinearOpMode{
 
         base.rightDuck.setPower(0.5);
         sleep(3000);
-        base.rightDuck.setPower(0); //spins carousel and delivers duck
+        base.rightDuck.setPower(0); //spins carousel
 
         base.gyroTurn(base.DRIVE_SPEED, -90, this);
         base.gyroDrive(base.DRIVE_SPEED, 24, 24, 0, 0, 0, this); //moves toward alliance hub
@@ -137,7 +137,7 @@ public class BlueCarousel extends LinearOpMode{
 
         base.bucket.setPower(-0.5);
         sleep(2000);
-        base.bucket.setPower(0); // lines 130-140 -- sets down bucket, releases freight, and flips bucket up
+        base.bucket.setPower(0); // delivers pre-loaded game piece
 
         base.lift(1, this);
 

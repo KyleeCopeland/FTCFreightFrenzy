@@ -52,13 +52,14 @@ public class RedCarousel extends LinearOpMode{
         //---------------- CASE LEFT ----------------
 
         base.gyroDrive(-1, 13,13,0,0,0,this);
+        base.gyroTurn(base.DRIVE_SPEED, -30, this); //moves robot and turns towards it
 
         base.leftDuck.setPower(-0.5);
         sleep(3000);
-        base.leftDuck.setPower(0);
+        base.leftDuck.setPower(0); //spins carousel
 
         base.gyroTurn(base.DRIVE_SPEED, -30, this);
-        base.gyroDrive(base.DRIVE_SPEED, 24, 24, 0, 0, 0, this);
+        base.gyroDrive(base.DRIVE_SPEED, 24, 24, 0, 0, 0, this); //moves towards alliance hub
 
         base.lift(1,this);
 
@@ -72,26 +73,26 @@ public class RedCarousel extends LinearOpMode{
 
         base.bucket.setPower(-0.5);
         sleep(2000);
-        base.bucket.setPower(0);
+        base.bucket.setPower(0); //delivers pre-loaded game piece
 
         base.gyroDrive(-1, 6, 6, 0, 0, 0, this);
         base.gyroTurn(base.DRIVE_SPEED, 30, this);
-        base.gyroDrive(0.5, 80, 80, 0, 0, 0, this);
+        base.gyroDrive(0.5, 80, 80, 0, 0, 0, this); //turns and parks in warehouse
 
 
         //---------------- CASE MIDDLE ----------------
 
         base.gyroDrive(-1, 13,13,0,0,0,this);
-        base.gyroTurn(base.DRIVE_SPEED, -30, this);
+        base.gyroTurn(base.DRIVE_SPEED, -30, this); //moves robot and turns towards it
 
         base.leftDuck.setPower(-0.5);
         sleep(3000);
-        base.leftDuck.setPower(0);
+        base.leftDuck.setPower(0); //spins carousel
 
         base.gyroTurn(base.DRIVE_SPEED, 90, this);
-        base.gyroDrive(base.DRIVE_SPEED, 24, 24, 0, 0, 0, this);
+        base.gyroDrive(base.DRIVE_SPEED, 24, 24, 0, 0, 0, this); //moves towards alliance hub
 
-        base.lift(2,this);
+        base.lift(2,this); //lifts bucket
 
         base.bucket.setPower(0.5);
         sleep(2000);
@@ -103,28 +104,28 @@ public class RedCarousel extends LinearOpMode{
 
         base.bucket.setPower(-0.5);
         sleep(2000);
-        base.bucket.setPower(0);
+        base.bucket.setPower(0); //delivers pre-loaded game piece
 
         base.lift(1, this);
 
         base.gyroDrive(-1, 6, 6, 0, 0, 0, this);
         base.gyroTurn(base.DRIVE_SPEED, 30, this);
-        base.gyroDrive(0.5, 80, 80, 0, 0, 0, this);
+        base.gyroDrive(0.5, 80, 80, 0, 0, 0, this); //turns and parks in warehouse
 
 
         //---------------- CASE RIGHT ----------------
 
         base.gyroDrive(-1, 13,13,0,0,0,this);
-        base.gyroTurn(base.DRIVE_SPEED, -30, this);
+        base.gyroTurn(base.DRIVE_SPEED, -30, this); //moves robot and turns towards it
 
         base.leftDuck.setPower(-0.5);
         sleep(3000);
-        base.leftDuck.setPower(0);
+        base.leftDuck.setPower(0); //spins carousel
 
         base.gyroTurn(base.DRIVE_SPEED, 90, this);
-        base.gyroDrive(base.DRIVE_SPEED, 24, 24, 0, 0, 0, this);
+        base.gyroDrive(base.DRIVE_SPEED, 24, 24, 0, 0, 0, this); //moves towards hub
 
-        base.lift(3,this);
+        base.lift(3,this); //lifts bucket
 
         base.bucket.setPower(0.5);
         sleep(2000);
@@ -136,13 +137,13 @@ public class RedCarousel extends LinearOpMode{
 
         base.bucket.setPower(-0.5);
         sleep(2000);
-        base.bucket.setPower(0);
+        base.bucket.setPower(0); //delivers pre-loaded game piece
 
         base.lift(1, this);
 
         base.gyroDrive(-1, 6, 6, 0, 0, 0, this);
         base.gyroTurn(base.DRIVE_SPEED, 30, this);
-        base.gyroDrive(0.5, 80, 80, 0, 0, 0, this);
+        base.gyroDrive(0.5, 80, 80, 0, 0, 0, this); //turns and parks in warehouse
 
     }
 }
