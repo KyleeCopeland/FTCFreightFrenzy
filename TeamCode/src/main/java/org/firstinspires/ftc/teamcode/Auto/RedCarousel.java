@@ -1,20 +1,23 @@
 package org.firstinspires.ftc.teamcode.Auto;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
 import org.firstinspires.ftc.teamcode.Base.MainBase;
 
-@Autonomous(name="RedCarousel")
-public class RedCarousel extends LinearOpMode{
+@Disabled
+@Autonomous(name="RED Carousel")
+public class REDCarousel extends LinearOpMode{
 
     MainBase base = new MainBase();
 
     @Override
     public void runOpMode() throws InterruptedException {
 
-        ContourDetector detector = new ContourDetector(hardwareMap, telemetry);
+        //ObjectDetector detector = new ObjectDetector(this, false);
+
 
         base.init(hardwareMap);
 
@@ -29,12 +32,12 @@ public class RedCarousel extends LinearOpMode{
 
         base.gyro.resetZAxisIntegrator();
 
-        /* int position = detector.getDecision();
-        detector.setTelemShow(false);
+        int position = 0;
 
         //---------------- CASE LEFT ----------------
         if (position == 0){
             //Robot movements for "Case Left" position of team marker.
+
         }
 
         //---------------- CASE MIDDLE ----------------
@@ -44,106 +47,9 @@ public class RedCarousel extends LinearOpMode{
         }
 
         //---------------- CASE RIGHT ----------------
-        else{
+        else if(position == 3){
             //Robot movements for "Case Right" position of team marker.
-        }*/
 
-
-        //---------------- CASE LEFT ----------------
-
-        base.gyroDrive(-1, 13,13,0,0,0,this);
-        base.gyroTurn(base.DRIVE_SPEED, -30, this); //moves robot and turns towards it
-
-        base.leftDuck.setPower(-0.5);
-        sleep(3000);
-        base.leftDuck.setPower(0); //spins carousel
-
-        base.gyroTurn(base.DRIVE_SPEED, -30, this);
-        base.gyroDrive(base.DRIVE_SPEED, 24, 24, 0, 0, 0, this); //moves towards alliance hub
-
-        base.lift(1,this);
-
-        base.bucket.setPower(0.5);
-        sleep(2000);
-        base.bucket.setPower(0);
-
-        base.rightClaw.setPower(0.5);
-        sleep(500);
-        base.rightClaw.setPower(0);
-
-        base.bucket.setPower(-0.5);
-        sleep(2000);
-        base.bucket.setPower(0); //delivers pre-loaded game piece
-
-        base.gyroDrive(-1, 6, 6, 0, 0, 0, this);
-        base.gyroTurn(base.DRIVE_SPEED, 30, this);
-        base.gyroDrive(0.5, 80, 80, 0, 0, 0, this); //turns and parks in warehouse
-
-
-        //---------------- CASE MIDDLE ----------------
-
-        base.gyroDrive(-1, 13,13,0,0,0,this);
-        base.gyroTurn(base.DRIVE_SPEED, -30, this); //moves robot and turns towards it
-
-        base.leftDuck.setPower(-0.5);
-        sleep(3000);
-        base.leftDuck.setPower(0); //spins carousel
-
-        base.gyroTurn(base.DRIVE_SPEED, 90, this);
-        base.gyroDrive(base.DRIVE_SPEED, 24, 24, 0, 0, 0, this); //moves towards alliance hub
-
-        base.lift(2,this); //lifts bucket
-
-        base.bucket.setPower(0.5);
-        sleep(2000);
-        base.bucket.setPower(0);
-
-        base.rightClaw.setPower(0.5);
-        sleep(500);
-        base.rightClaw.setPower(0);
-
-        base.bucket.setPower(-0.5);
-        sleep(2000);
-        base.bucket.setPower(0); //delivers pre-loaded game piece
-
-        base.lift(1, this);
-
-        base.gyroDrive(-1, 6, 6, 0, 0, 0, this);
-        base.gyroTurn(base.DRIVE_SPEED, 30, this);
-        base.gyroDrive(0.5, 80, 80, 0, 0, 0, this); //turns and parks in warehouse
-
-
-        //---------------- CASE RIGHT ----------------
-
-        base.gyroDrive(-1, 13,13,0,0,0,this);
-        base.gyroTurn(base.DRIVE_SPEED, -30, this); //moves robot and turns towards it
-
-        base.leftDuck.setPower(-0.5);
-        sleep(3000);
-        base.leftDuck.setPower(0); //spins carousel
-
-        base.gyroTurn(base.DRIVE_SPEED, 90, this);
-        base.gyroDrive(base.DRIVE_SPEED, 24, 24, 0, 0, 0, this); //moves towards hub
-
-        base.lift(3,this); //lifts bucket
-
-        base.bucket.setPower(0.5);
-        sleep(2000);
-        base.bucket.setPower(0);
-
-        base.rightClaw.setPower(0.5);
-        sleep(500);
-        base.rightClaw.setPower(0);
-
-        base.bucket.setPower(-0.5);
-        sleep(2000);
-        base.bucket.setPower(0); //delivers pre-loaded game piece
-
-        base.lift(1, this);
-
-        base.gyroDrive(-1, 6, 6, 0, 0, 0, this);
-        base.gyroTurn(base.DRIVE_SPEED, 30, this);
-        base.gyroDrive(0.5, 80, 80, 0, 0, 0, this); //turns and parks in warehouse
-
+        }
     }
 }
