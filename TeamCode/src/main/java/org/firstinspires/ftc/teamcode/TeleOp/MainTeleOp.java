@@ -23,6 +23,7 @@ public class MainTeleOp extends LinearOpMode {
     public double  RCLAW_OPEN    = 0.25;
     public double  RCLAW_CLOSED  = 0.75; //0.6;
     public double  BUCKET_OPEN   = 0.75; //0.5;
+    public double  BUCKET_HALF   = 0.5; //posistion halfway for delivering
     public double  BUCKET_CLOSED = 0.25; //0.3;
     public double  DUCK_SPEED = -0.42;
     int level = 0;
