@@ -16,6 +16,7 @@ public class MainTeleOp extends LinearOpMode {
     public boolean GP2_LB_Held   = false;
     public boolean GP2_RB_Held   = false;
     public boolean GP2_Y_Held    = false;
+    public boolean GP2_A_Held    = false;
     public boolean SlowMode      = false;
     public boolean AUTO_LIFT     = false;
     public double  LCLAW_OPEN    = 0.75; //0.75;
@@ -109,8 +110,11 @@ public class MainTeleOp extends LinearOpMode {
         }
 
         //---------------LIFT-SYSTEM---------------\\
-        if (gamepad2.a) {
-            base.lift.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        if (gamepad2.a && !GP2_A_Held) {
+            GP2_A_Held = true;
+            base.bucket.setPosition(BUCKET_HALF);
+        } else {
+            base.bucket.setPosition(0);
         }
 
         double liftArm = -gamepad2.right_stick_y;
