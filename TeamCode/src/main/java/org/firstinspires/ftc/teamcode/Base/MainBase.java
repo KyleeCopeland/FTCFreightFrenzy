@@ -83,7 +83,7 @@ public class MainBase {
         rightDuck.setPower(0);
         lift.setPower(0);
         rightClaw.setPosition(0.5);
-        bucket.setPosition(0.1); //must be inside boundaries during init
+        bucket.setPosition(0.9); //must be inside boundaries during init
         leftClaw.setPosition(0.5);
     }
 

@@ -10,14 +10,13 @@ import org.firstinspires.ftc.teamcode.Base.MainBase;
 
 
 @Autonomous(name= "BLUE SU")
-public class BlueSUPark extends LinearOpMode{
+public class BlueSUPark extends LinearOpMode {
 
     MainBase base = new MainBase();
 
     @Override
     public void runOpMode() throws InterruptedException {
 
-        ObjectDetector detector = new ObjectDetector(this, false);
 
         base.init(hardwareMap);
 
@@ -32,8 +31,9 @@ public class BlueSUPark extends LinearOpMode{
 
         //Blue autonomous: Delivers Duck and Parks in Storage Unit
         //26,90l,26
-        base.encoderDrive(.5,26,26,this);
-        base.gyroTurn(.5,90, this);
-        base.encoderDrive(.5,26,26,this);
+        base.encoderDrive(.5, 0.1, 0.1, this);
+        base.gyroTurn(.5, 90, this);
+        base.encoderDrive(.5, 0.1, 0.1, this);
+        sleep(30000);
     }
 }

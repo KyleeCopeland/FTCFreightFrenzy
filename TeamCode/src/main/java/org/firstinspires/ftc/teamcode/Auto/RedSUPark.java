@@ -17,8 +17,6 @@ public class RedSUPark extends LinearOpMode{
     @Override
     public void runOpMode() throws InterruptedException {
 
-        ObjectDetector detector = new ObjectDetector(this, false);
-
         base.init(hardwareMap);
 
         base.rightDT.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
