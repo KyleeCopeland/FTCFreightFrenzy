@@ -83,7 +83,7 @@ public class MainBase {
         rightDuck.setPower(0);
         lift.setPower(0);
         rightClaw.setPosition(0.5);
-        bucket.setPosition(0.5);
+        bucket.setPosition(0.1); //must be inside boundaries during init
         leftClaw.setPosition(0.5);
     }
 
@@ -249,7 +249,7 @@ public class MainBase {
 
                         leftDT.getCurrentPosition(),
                         rightDT.getCurrentPosition(),
-                opMode.telemetry.addData("leftDT", leftDT.getCurrentPosition()));
+                        opMode.telemetry.addData("leftDT", leftDT.getCurrentPosition()));
                 opMode.telemetry.addData("rightDT", rightDT.getCurrentPosition());
 
                 opMode.telemetry.update();
